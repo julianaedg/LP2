@@ -54,21 +54,7 @@ class Rect {
         this.fundo = fundo;
         this.contorno = contorno;
     }
-
-
-    Rect(int x, int y, int w, int h) {
-        this(x, y, w, h, Color.WHITE, Color.BLACK);
-    }
-
-    int area() {
-        return w * h;
-    }
-
-    void drag(int dx, int dy) {
-        this.x += dx;
-        this.y += dy;
-    }
-
+    
     void paint(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
 
